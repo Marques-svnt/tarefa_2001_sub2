@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
+#include "hardware/pwm.h"
+#include "pico/cyw43_arch.h"
+#include "ani_00.h"
 
+#define LED_COUNT 25
+#define LED_PIN 9
 
 // Definição dos pinos do teclado
 uint columns[4] = {4, 3, 2, 28}; // Pinos das colunas
@@ -102,7 +107,7 @@ int main() {
 
         // Controle baseado em teclas específicas
         if (key == '0') {
-            //Animação da tecla 0
+            ani_00();
         } else if (key == '1') {
             //Animação da tecla 1
         } else if (key == '2') {
