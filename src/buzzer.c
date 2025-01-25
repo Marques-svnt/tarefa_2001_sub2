@@ -3,7 +3,6 @@
 
 #define BUZZER_PIN 21 //Porta associada ao Buzzer
 
-
 void buzz(uint freq, uint tempo) {
 
     uint slice_num = pwm_gpio_to_slice_num(BUZZER_PIN);

@@ -2,6 +2,7 @@
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
 #include "hardware/clocks.h"
+#include "buzzer.h"
 
 // Biblioteca gerada pelo arquivo .pio durante compilação.
 #include "ws2818b.pio.h"
@@ -95,10 +96,14 @@ void ani_00() {
   // Inicializa entradas e saídas.
   stdio_init_all();
 
+  // Inicializa o Buzzer
+  gpio_set_function(21, GPIO_FUNC_PWM);
+
   // Inicializa matriz de LEDs NeoPixel.
   npInit(LED_PIN);
   npClear();
-  while (true) {
+  int i = 0;
+  while (i == 0) {
   //frame 1
   npSetLED(1, BRANCO);
   npWrite();
@@ -222,6 +227,9 @@ void ani_00() {
   npClear();
 
   //frame 9
+  buzz(300,500);
+  buzz(250,500);
+  buzz(100,250);
   npSetLED(0, AMARELO);
   npSetLED(1, AMARELO);
   npSetLED(2, AMARELO);
@@ -309,7 +317,7 @@ void ani_00() {
   npClear();
   npWrite(); 
   sleep_ms(delay);
-
+  i++;
   }
 
 }
