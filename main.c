@@ -1,10 +1,16 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
+#include "hardware/pwm.h"
+#include "pico/cyw43_arch.h"
+#include "ani_00.h"
 
+// Definição do número de LEDs e pino.
+#define LED_COUNT 25
+#define LED_PIN 7
 
 // Definição dos pinos do teclado
 uint columns[4] = {4, 3, 2, 28}; // Pinos das colunas
-uint rows[4] = {8, 7, 6, 5};     // Pinos das linhas
+uint rows[4] = {8, 9, 6, 5};     // Pinos das linhas
 
 // Mapeamento do teclado
 char KEY_MAP[16] = {
@@ -64,7 +70,7 @@ char pico_keypad_get_key(void) {
     for (row = 0; row < 4; row++) {
         gpio_put(_rows[row], 1);
 
-        busy_wait_us(10000);
+        busy_wait_us(50000);
 
         cols = gpio_get_all();
         gpio_put(_rows[row], 0);
@@ -102,7 +108,7 @@ int main() {
 
         // Controle baseado em teclas específicas
         if (key == '0') {
-            //Animação da tecla 0
+            ani_00();
         } else if (key == '1') {
             //Animação da tecla 1
         } else if (key == '2') {
@@ -133,4 +139,5 @@ int main() {
             printf("Essa tecla não possui animação");
         }
     }
+    return 0;
 }
