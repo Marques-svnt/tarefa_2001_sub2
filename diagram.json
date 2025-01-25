@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "author": "Gabriel-Marques",
+  "author": "Gabriel Marques",
   "editor": "wokwi",
   "parts": [
     {
       "type": "board-pi-pico-w",
       "id": "pico",
-      "top": -70.45,
-      "left": 445.15,
+      "top": -3.25,
+      "left": 253.15,
       "attrs": { "builder": "pico-sdk" }
     },
     { "type": "wokwi-neopixel", "id": "rgb1", "top": 92.5, "left": -97, "attrs": {} },
@@ -48,14 +48,15 @@
     {
       "type": "wokwi-membrane-keypad",
       "id": "keypad1",
-      "top": -453.2,
-      "left": 120.8,
+      "top": -472.4,
+      "left": 149.6,
       "attrs": {}
     }
   ],
   "connections": [
     [ "pico:GP0", "$serialMonitor:RX", "", [] ],
     [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "pico:GP7", "rgb1:DIN", "green", [ "h-54.05", "v-3.25" ] ],
     [ "gnd1:GND", "rgb1:VSS", "black", [ "v0" ] ],
     [ "rgb1:DOUT", "rgb2:DIN", "green", [ "h-19.2", "v-10.5" ] ],
     [ "rgb2:DOUT", "rgb3:DIN", "green", [ "h-19.2", "v-10.5" ] ],
@@ -140,15 +141,14 @@
     [ "rgb23:VSS", "gnd5:GND", "green", [ "v0" ] ],
     [ "rgb24:VSS", "gnd5:GND", "green", [ "v0" ] ],
     [ "rgb25:VSS", "gnd5:GND", "green", [ "v0" ] ],
-    [ "pico:GP9", "vcc1:VCC", "green", [ "h0" ] ],
-    [ "keypad1:C4", "pico:GP28", "green", [ "v0", "h306.9", "v105.6" ] ],
-    [ "keypad1:C2", "pico:GP3", "green", [ "v0" ] ],
-    [ "keypad1:C3", "pico:GP2", "green", [ "v0" ] ],
-    [ "keypad1:C1", "pico:GP4", "green", [ "v0" ] ],
-    [ "keypad1:R4", "pico:GP5", "green", [ "v0" ] ],
-    [ "keypad1:R3", "pico:GP6", "green", [ "v0" ] ],
-    [ "keypad1:R2", "pico:GP7", "green", [ "v0" ] ],
-    [ "keypad1:R1", "pico:GP8", "green", [ "v0" ] ]
+    [ "keypad1:R1", "pico:GP8", "green", [ "v28.8", "h-105.6", "v182.4" ] ],
+    [ "keypad1:R2", "pico:GP9", "green", [ "v38.4", "h-106", "v211.2" ] ],
+    [ "keypad1:R3", "pico:GP6", "green", [ "v48", "h-105.9", "v163.2" ] ],
+    [ "keypad1:R4", "pico:GP5", "green", [ "v57.6", "h-105.8", "v144" ] ],
+    [ "keypad1:C1", "pico:GP4", "green", [ "v57.6", "h-0.1", "v9.6", "h-105.6", "v115.2" ] ],
+    [ "keypad1:C2", "pico:GP3", "green", [ "v76.8", "h-105.6", "v96" ] ],
+    [ "keypad1:C3", "pico:GP2", "green", [ "v86.4", "h-105.75", "v76.8" ] ],
+    [ "keypad1:C4", "pico:GP28", "green", [ "v76.8", "h66.9", "v115.2" ] ]
   ],
   "dependencies": {}
 }
