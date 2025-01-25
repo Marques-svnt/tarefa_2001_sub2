@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "hardware/watchdog.h"
+#include "pico/bootrom.h"
 
 // Função que executa a ação ao pressionar a tecla '*'
 void ani_asterisco() {
-    printf("Modo de gravação habilitado. Reiniciando...\n");
-    watchdog_reboot(0, 0, 0);  // Reinicia o Raspberry Pi Pico
+    printf("Entrando no modo BOOTSEL...\n");
+    reset_usb_boot(0, 0);
 }
