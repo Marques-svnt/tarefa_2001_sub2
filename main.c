@@ -3,6 +3,7 @@
 #include "hardware/pwm.h"
 #include "pico/cyw43_arch.h"
 #include "ani_00.h"
+#include "ani_asterisco.h"
 #include "teclado.h"
 #include "buzzer.h"
 
@@ -42,7 +43,7 @@ int main() {
         } else if (key == '#') {
             //Animação da tecla #
         } else if (key == '*') {
-            //Animação da tecla *
+            ani_asterisco();  // Chama a funcionalidade da tecla '*'
         } else {
             printf("Essa tecla não possui animação");
         }
