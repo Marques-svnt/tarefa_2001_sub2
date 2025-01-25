@@ -114,3 +114,9 @@ void ani_04()
     i++;
   }
 }
+//caso seja apertado a tecla A todos os leds serão desligados
+void bot_A(){
+  npClear();
+  npWrite();
+  sleep_ms(delay);
+}
