@@ -24,7 +24,7 @@ int main() {
         } else if (key == '3') {
             //Animação da tecla 3
         } else if (key == '4') {
-            //Animação da tecla 4
+            ani_04();
         } else if (key == '5') {
             //Animação da tecla 5
         } else if (key == '6') {
