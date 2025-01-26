@@ -4,10 +4,6 @@
 #include "hardware/clocks.h"
 #include "leds.h"
 
-// Definição do número de LEDs e pino.
-#define LED_COUNT 25
-#define LED_PIN 7
-
 // Definição das cores:
 #define BRANCO 200, 200, 200
 #define AZUL 0, 0, 200

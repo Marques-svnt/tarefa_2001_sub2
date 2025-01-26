@@ -5,10 +5,6 @@
 #include "buzzer.h"
 #include "leds.h"
 
-// Definição do número de LEDs e pino.
-#define LED_COUNT 25
-#define LED_PIN 7
-
 // Definição das cores:
 #define BRANCO 200, 200, 200
 #define AZUL 0, 0, 200
@@ -144,9 +140,9 @@ void ani_00()
   npClear();
 
   // frame 9
-  buzz(300.0f, 500);
-  buzz(250.0f, 500);
-  buzz(100.0f, 250);
+  buzz(300, 500); //som da bomba
+  buzz(250, 500);
+  buzz(100, 250);
   npSetLED(0, AMARELO);
   npSetLED(1, AMARELO);
   npSetLED(2, AMARELO);

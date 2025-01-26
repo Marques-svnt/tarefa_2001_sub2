@@ -2,7 +2,6 @@
 #define BUZZER_H
 
 //Declaração das funções do buzzer
-void buzz(float hz, int time);
-void init_buzzer();
+void buzz();
 
 #endif

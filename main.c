@@ -14,10 +14,11 @@
 
 // Função principal
 int main()
-{
+{  
+    // Inicializar todos os perifericos
     stdio_init_all();
     teclado();
-    void init_buzzer();
+    gpio_set_function(21, GPIO_FUNC_PWM);
     npInit(LED_PIN);
     npClear();
 

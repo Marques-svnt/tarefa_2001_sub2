@@ -3,7 +3,6 @@
 #include "hardware/pwm.h"
 #include "pico/cyw43_arch.h"
 
-
 // Definição dos pinos do teclado
 uint columns[4] = {4, 3, 2, 28}; // Pinos das colunas
 uint rows[4] = {8, 9, 6, 5};     // Pinos das linhas

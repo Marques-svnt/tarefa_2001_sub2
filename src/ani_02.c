@@ -6,7 +6,6 @@
 
 // Definição do número de LEDs e pino.
 #define LED_COUNT 25
-#define LED_PIN 7
 
 // Cor azul
 #define AZUL 0, 0, 255
