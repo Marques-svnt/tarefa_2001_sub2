@@ -121,7 +121,7 @@ void ani_04()
 
     
 
-    // frame 12
+    // frame 9
     npClear();
     npWrite();
     sleep_ms(delay);
