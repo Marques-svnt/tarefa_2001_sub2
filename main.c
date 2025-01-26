@@ -3,6 +3,7 @@
 #include "hardware/pwm.h"
 #include "pico/cyw43_arch.h"
 #include "ani_00.h"
+#include "ani_04.h"
 #include "ani_asterisco.h"
 #include "teclado.h"
 #include "buzzer.h"

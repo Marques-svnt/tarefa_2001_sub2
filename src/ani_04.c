@@ -1,9 +1,23 @@
+#include <stdio.h>
+#include "pico/stdlib.h"
+#include "hardware/pio.h"
+#include "hardware/clocks.h"
 #include "ani_00.h"
-#include "ani_04.h"
+
+// Definição do número de LEDs e pino.
+#define LED_COUNT 25
+#define LED_PIN 7
+
+// Definição das cores:
+#define BRANCO 200, 200, 200
+#define AZUL  0, 0, 200
+
+// Definição do delay
+#define delay 1000/4 
+
 /// animação 4 caso seja apertado a tecla 4
 void ani_04()
 {
-
   // Inicializa entradas e saídas.
   stdio_init_all();
 
