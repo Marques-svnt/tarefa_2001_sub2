@@ -38,9 +38,8 @@ void control_buzzer_pwm(bool state, float freq) {
     }
 }
 
-void buzz() {
-    init_buzzer(); // Inicializa o buzzer
-    control_buzzer_pwm(true, 700.0f); // Liga o buzzer com frequência de 700 Hz
-    sleep_ms(1000); // Mantém o buzzer ligado por 2,5 segundos
-    control_buzzer_pwm(false, 700.0f); // Desliga o buzzer
+void buzz(float hz, int time) {
+    control_buzzer_pwm(true, hz); 
+    sleep_ms(time);
+    control_buzzer_pwm(false, hz); 
 }

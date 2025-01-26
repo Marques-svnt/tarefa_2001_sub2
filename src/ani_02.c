@@ -76,9 +76,6 @@ void ani_fade_5frames()
 
   void ani_02()
   {
-    stdio_init_all();
-    npInit(LED_PIN);
-
     ani_wave_5frames();  // Animação de onda (5 frames)
     ani_snake_5frames(); // Animação de cobra (5 frames)
     ani_fade_5frames();  // Animação de fade (5 frames)

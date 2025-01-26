@@ -10,11 +10,16 @@
 #include "buzzer.h"
 #include "leds.h"
 
+#define LED_PIN 7
+
 // Função principal
 int main()
 {
     stdio_init_all();
     teclado();
+    void init_buzzer();
+    npInit(LED_PIN);
+    npClear();
 
     while (true)
     {

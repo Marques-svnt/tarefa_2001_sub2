@@ -21,15 +21,6 @@
 void ani_00()
 {
 
-  // Inicializa entradas e saídas.
-  stdio_init_all();
-
-  // Inicializa o Buzzer
-  gpio_set_function(21, GPIO_FUNC_PWM);
-
-  // Inicializa matriz de LEDs NeoPixel.
-  npInit(LED_PIN);
-  npClear();
   // frame 1
   npSetLED(1, BRANCO);
   npWrite();
@@ -153,9 +144,9 @@ void ani_00()
   npClear();
 
   // frame 9
-  buzz(300, 500);
-  buzz(250, 500);
-  buzz(100, 250);
+  buzz(300.0f, 500);
+  buzz(250.0f, 500);
+  buzz(100.0f, 250);
   npSetLED(0, AMARELO);
   npSetLED(1, AMARELO);
   npSetLED(2, AMARELO);
@@ -242,5 +233,5 @@ void ani_00()
   // frame 12
   npClear();
   npWrite();
-  sleep_ms(delay);
+  sleep_ms(1000);
 }

@@ -18,12 +18,6 @@
 /// animação 4 caso seja apertado a tecla 4
 void ani_04()
 {
-  // Inicializa entradas e saídas.
-  stdio_init_all();
-
-  // Inicializa matriz de LEDs NeoPixel.
-  npInit(LED_PIN);
-  npClear();
   // frame 1
   npSetLED(1, AZUL);
   npSetLED(3, AZUL);
