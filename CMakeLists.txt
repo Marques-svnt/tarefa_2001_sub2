@@ -35,17 +35,24 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(main main.c )
+add_executable(main main.c src/ani_00.c src/teclado.c src/buzzer.c src/ani_asterisco.c)
 
 pico_set_program_name(main "main")
 pico_set_program_version(main "0.1")
 
+# Generate PIO header
+pico_generate_pio_header(main ${CMAKE_CURRENT_LIST_DIR}/ws2818b.pio)
+
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(main 0)
-pico_enable_stdio_usb(main 0)
+pico_enable_stdio_usb(main 1)
 
 # Add the standard library to the build
 target_link_libraries(main
+        hardware_pio
+        hardware_pwm
+        hardware_clocks
+        pico_cyw43_arch_none # Adiciona suporte ao CYW43 sem multitarefa
         pico_stdlib)
 
 # Add the standard include files to the build
@@ -60,3 +67,5 @@ target_link_libraries(main
 
 pico_add_extra_outputs(main)
 
+include_directories(${CMAKE_SOURCE_DIR}/include)
+include_directories(${CMAKE_SOURCE_DIR}/src)
