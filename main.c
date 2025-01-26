@@ -49,5 +49,4 @@ int main() {
             printf("Essa tecla não possui animação");
         }
     }
-    return 0;
 }

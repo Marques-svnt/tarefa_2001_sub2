@@ -24,9 +24,6 @@ void ani_04()
   // Inicializa matriz de LEDs NeoPixel.
   npInit(LED_PIN);
   npClear();
-  int i = 0;
-  while (i == 0)
-  {
     // frame 1
     npSetLED(1, AZUL);
     npSetLED(3, AZUL);
@@ -119,14 +116,10 @@ void ani_04()
     sleep_ms(delay);
     npClear();
 
-    
-
-    // frame 12
+    // frame 9
     npClear();
     npWrite();
     sleep_ms(delay);
-    i++;
-  }
 }
 //caso seja apertado a tecla A todos os leds serão desligados
 void bot_A(){

@@ -66,7 +66,7 @@ char pico_keypad_get_key(void) {
     for (row = 0; row < 4; row++) {
         gpio_put(_rows[row], 1);
 
-        busy_wait_us(50000);
+        busy_wait_us(10000);
 
         cols = gpio_get_all();
         gpio_put(_rows[row], 0);
