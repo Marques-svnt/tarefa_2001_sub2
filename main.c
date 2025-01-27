@@ -64,7 +64,7 @@ int main()
         }
         else if (key == 'A')
         {
-            // Animação da tecla A
+            bot_A();
         }
         else if (key == 'B')
         {
