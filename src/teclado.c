@@ -3,7 +3,6 @@
 #include "hardware/pwm.h"
 #include "pico/cyw43_arch.h"
 
-
 // Definição dos pinos do teclado
 uint columns[4] = {4, 3, 2, 28}; // Pinos das colunas
 uint rows[4] = {8, 9, 6, 5};     // Pinos das linhas
@@ -66,7 +65,7 @@ char pico_keypad_get_key(void) {
     for (row = 0; row < 4; row++) {
         gpio_put(_rows[row], 1);
 
-        busy_wait_us(50000);
+        busy_wait_us(10000);
 
         cols = gpio_get_all();
         gpio_put(_rows[row], 0);
