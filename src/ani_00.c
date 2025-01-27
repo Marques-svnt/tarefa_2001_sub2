@@ -229,5 +229,6 @@ void ani_00()
   // frame 12
   npClear();
   npWrite();
+  buzzer_stop();
   sleep_ms(1000);
 }

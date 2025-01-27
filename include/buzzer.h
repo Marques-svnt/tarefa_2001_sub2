@@ -3,5 +3,6 @@
 
 //Declaração das funções do buzzer
 void buzz();
+void buzzer_stop();
 
 #endif
