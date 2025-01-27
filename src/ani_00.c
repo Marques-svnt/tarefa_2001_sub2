@@ -16,6 +16,7 @@
 
 void ani_00()
 {
+  buzzer_init();
 
   // frame 1
   npSetLED(1, BRANCO);

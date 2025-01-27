@@ -4,5 +4,6 @@
 //Declaração das funções do buzzer
 void buzz();
 void buzzer_stop();
+void buzzer_init();
 
 #endif
