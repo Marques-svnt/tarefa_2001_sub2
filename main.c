@@ -6,6 +6,7 @@
 #include "ani_asterisco.h"
 #include "teclado.h"
 #include "buzzer.h"
+#include "ani_tecla_c.h"
 
 // Função principal
 int main() {
@@ -38,6 +39,7 @@ int main() {
             //Animação da tecla B
         } else if (key == 'C') {
             //Animação da tecla C
+            ani_tecla_c();
         } else if (key == 'D') {
             //Animação da tecla D
         } else if (key == '#') {
