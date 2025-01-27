@@ -4,8 +4,8 @@
 #include "pico/cyw43_arch.h"
 
 // Definição dos pinos do teclado
-uint columns[4] = {20, 4, 9, 8};
-uint rows[4] = {17, 16, 18, 19};
+uint columns[4] = {4, 3, 2, 28}; // Pinos das colunas
+uint rows[4] = {8, 9, 6, 5};     // Pinos das linhas
 
 // Mapeamento do teclado
 char KEY_MAP[16] = {
