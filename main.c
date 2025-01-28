@@ -5,18 +5,18 @@
 #include "ani_00.h"
 #include "ani_02.h"
 #include "ani_04.h"
+#include "ani_05.h"
 #include "ani_asterisco.h"
+#include "tecla_hashtag.h"
 #include "teclado.h"
 #include "buzzer.h"
 #include "leds.h"
-#include "ani_05.h"
-#include "tecla_hashtag.h"
 
 #define LED_PIN 7
 
 // Função principal
 int main()
-{  
+{
     // Inicializar todos os perifericos
     stdio_init_all();
     teclado();
@@ -83,7 +83,7 @@ int main()
         }
         else if (key == '#')
         {
-            // monitorar_tecla();
+            // Animação da tecla #
         }
         else if (key == '*')
         {

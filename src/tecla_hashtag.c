@@ -2,7 +2,6 @@
 // #include "leds.h"
 // #include <stdio.h>
 // #include "pico/stdlib.h"
-
 // #include <stdint.h>
 
 // // Definição da cor azul com intensidade de 20% (20% de 255 = 51)
@@ -22,7 +21,7 @@
 // void tecla_hashtag() {
 //     // Configura cada LED na cor azul com intensidade de 20%
 //     for (int i = 0; i < LED_COUNT; i++) {
-//         npSetLED(led_indices[i], AZUL_20);
+//         npSetLED(led_indices[i], AZUL_20); // Acende o LED com a cor azul 20% de intensidade
 //     }
 
 //     // Envia os dados para atualizar os LEDs
@@ -32,13 +31,7 @@
 //     printf("Todos os LEDs configurados na cor azul com 20%% de intensidade.\n");
 // }
 
-// // Função para monitorar a tecla #
+// // Função para monitorar a tecla # pressionada
 // void monitorar_tecla() {
-//     while (true) {
-//         char tecla = getchar_timeout_us(100000); // Aguarda entrada por 100ms
-
-//         if (tecla == '#') {
-//             tecla_hashtag(); // Aciona a função para acender os LEDs
-//         }
-//     }
+//     tecla_hashtag(); // Apenas chama a função que acende os LEDs
 // }

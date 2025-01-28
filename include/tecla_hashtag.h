@@ -1,10 +1,11 @@
 // #ifndef TECLA_HASHTAG_H
 // #define TECLA_HASHTAG_H
 
-// // Declaração da função que acende os LEDs na cor azul
+// // Função para acionar a animação dos LEDs na cor azul
 // void tecla_hashtag();
 
-// // Declaração da função que monitora a tecla #
+// // Função para monitorar a tecla '#' pressionada
+// // Não é mais necessário verificar a tecla aqui, pois isso ocorre no main
 // void monitorar_tecla();
 
 // #endif // TECLA_HASHTAG_H
