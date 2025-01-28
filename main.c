@@ -7,6 +7,7 @@
 #include "ani_03.h"
 #include "ani_04.h"
 #include "ani_05.h"
+#include "ani_06.h"
 #include "ani_asterisco.h"
 #include "teclado.h"
 #include "buzzer.h"
