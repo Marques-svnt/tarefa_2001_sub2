@@ -8,7 +8,6 @@
 #include "ani_04.h"
 #include "ani_05.h"
 #include "ani_asterisco.h"
-#include "tecla_hashtag.h"
 #include "teclado.h"
 #include "buzzer.h"
 #include "ani_tecla_c.h"
@@ -47,7 +46,6 @@ int main()
         }
         else if (key == '3')
         {
-          // Animação da tecla 3
           ani_03();  
           sleep_ms(500);  
         }
@@ -79,7 +77,7 @@ int main()
         }
         else if (key == 'C')
         {
-            // Animação da tecla C
+            ani_tecla_c();
         }
         else if (key == 'D')
         {
