@@ -32,7 +32,7 @@ Modo bootsel através do teclado
 | Tecla | Função                              |
 |-------|-------------------------------------|
 | **1** | animação 01 - Gabriel Marques  - Bomba explodindo com buzzer               |
-| **2** | animação 02 Ariel dos Santos de Cristo Góes (animação em ondas e intensidade)                 |
+| **2** | animação 02 -  Ariel dos Santos de Cristo Góes (animação em ondas e intensidade)                 |
 | **3** | animação 03 - Marcelo Rick Almeida Santos|
 | **4** | animação 04- Paulo César de Jesus Di Lauro Robô atirando  |
 | **5** | animação 05 - Bruna Alves Cabral  - Frames das letras do nome BRUNA |
@@ -70,7 +70,7 @@ Para testar o programa sem hardware físico, você pode utilizar o **Wokwi** par
 
 ## Demonstração no YouTube
 
-Confira a demonstração completa deste projeto no YouTube: [Demonstração do Projeto]( a preencher )
+Confira a demonstração completa deste projeto no YouTube: [Demonstração do Projeto]( https://www.youtube.com/watch?v=VZ1FqGPwg6E )
 
 ---
 
