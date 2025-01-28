@@ -5,7 +5,7 @@
 #include "leds.h"
 
 // Definição das cores:
-#define BRANCO 200, 200, 200
+#define BRANCO 255, 255, 255
 
 // Delay de controle da animação
 #define DELAY_MS 250

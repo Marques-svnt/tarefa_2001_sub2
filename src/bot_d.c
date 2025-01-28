@@ -4,8 +4,9 @@
 #include "hardware/clocks.h"
 #include "leds.h"
 
-// Definição da cor verde com 50% de intensidade (255 *0.5 = 127.5)
-#define VERDE 0, 128, 0
+
+// Definição da cor verde com 50% de intensidade (255 *0.5 = 127.5), vamos usar 120 devido ao wokwi não interpretar corretamente o 128
+#define VERDE 0, 120, 0
 
 // Definição do número de LEDs e pino.
 #define LED_COUNT 25
