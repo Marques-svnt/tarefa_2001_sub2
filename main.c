@@ -11,6 +11,7 @@
 #include "teclado.h"
 #include "buzzer.h"
 #include "ani_tecla_c.h"
+#include "bot_d.h"
 #include "leds.h"
 
 #define LED_PIN 7
@@ -77,7 +78,7 @@ int main()
         }
         else if (key == 'D')
         {
-            // Animação da tecla D
+            bot_d();
         }
         else if (key == '#')
         {
@@ -86,9 +87,6 @@ int main()
         else if (key == '*')
         {
             ani_asterisco(); // Chama a funcionalidade da tecla '*'
-        }
-        else{
-            printf("Essa tecla não possui animação");
         }
     }
 }
