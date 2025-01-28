@@ -36,13 +36,13 @@ Modo bootsel através do teclado
 | **3** | animação 03 - Marcelo Rick Almeida Santos|
 | **4** | animação 04- Paulo César de Jesus Di Lauro Robô atirando  |
 | **5** | animação 05 - Bruna Alves Cabral  - Frames das letras do nome BRUNA |
-| **6*** | animação 06 - Lucas Borges Ribeiro - Animação do nome Lucas e um emoji   |
-| **7*** | animação 07 - Iago Virgílio - Vórtice Luminoso  |
-| **A*** | Desligar todos os LEDs  |
-| **B*** | Ligar todos os LEDs na cor azul com intensidade de 100 %  |
-| **C*** | Ligar todos os LEDs na cor vermelha com intensidade de 80 %  |
-| **D*** | Ligar todos os LEDs na cor verde com intensidade de 50 %  |
-| **#*** |Ligar todos os LEDs na cor branca com intensidade de 20 %  |
+| **6** | animação 06 - Lucas Borges Ribeiro - Animação do nome Lucas e um emoji   |
+| **7** | animação 07 - Iago Virgílio - Vórtice Luminoso  |
+| **A** | Desligar todos os LEDs  |
+| **B** | Ligar todos os LEDs na cor azul com intensidade de 100 %  |
+| **C** | Ligar todos os LEDs na cor vermelha com intensidade de 80 %  |
+| **D** | Ligar todos os LEDs na cor verde com intensidade de 50 %  |
+| **#** |Ligar todos os LEDs na cor branca com intensidade de 20 %  |
 | **\*** | Habilita o modo de gravação USB.  |
 
 ---
