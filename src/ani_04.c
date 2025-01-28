@@ -5,8 +5,8 @@
 #include "leds.h"
 
 // Definição das cores:
-#define BRANCO 200, 200, 200
-#define AZUL 0, 0, 200
+#define BRANCO 255, 255, 255
+#define AZUL 0, 0, 255
 
 // Definição do delay
 

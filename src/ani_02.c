@@ -11,7 +11,7 @@
 #define AZUL 0, 0, 255
 
 #define FRAME_DELAY (1000 / FPS)
-#define FPS 15
+#define FPS 2
 
 // Animação de onda (5 frames)
 void ani_wave_5frames()

@@ -2,16 +2,20 @@
 #include "pico/stdlib.h"
 #include "hardware/pwm.h"
 #include "pico/cyw43_arch.h"
-#include "ani_00.h"
+#include "ani_01.h"
 #include "ani_02.h"
 #include "ani_03.h"
 #include "ani_04.h"
 #include "ani_05.h"
+#include "ani_05.h"
+#include "ani_06.h"
+#include "ani_07.h"
 #include "ani_asterisco.h"
-#include "tecla_hashtag.h"
 #include "teclado.h"
 #include "buzzer.h"
 #include "ani_tecla_c.h"
+#include "bot_d.h"
+#include "tecla_hashtag.h"
 #include "leds.h"
 
 #define LED_PIN 7
@@ -31,14 +35,10 @@ int main()
         char key = pico_keypad_get_key();
 
         // Controle baseado em teclas específicas
-        if (key == '0')
+        if (key == '1')
         {
-            ani_00();
+            ani_01();
             sleep_ms(500);
-        }
-        else if (key == '1')
-        {
-            // Animação da tecla 1
         }
         else if (key == '2')
         {
@@ -47,7 +47,6 @@ int main()
         }
         else if (key == '3')
         {
-          // Animação da tecla 3
           ani_03();  
           sleep_ms(500);  
         }
@@ -64,10 +63,12 @@ int main()
         else if (key == '6')
         {
             // Animação da tecla 6
+            ani_06();
+            sleep_ms(500); 
         }
-        else if (key == '7')
-        {
-            // Animação da tecla 7
+        else if (key == '7') {
+            ani_07();  
+            sleep_ms(500);
         }
         else if (key == 'A')
         {
@@ -79,22 +80,19 @@ int main()
         }
         else if (key == 'C')
         {
-            // Animação da tecla C
+            ani_tecla_c();
         }
         else if (key == 'D')
         {
-            // Animação da tecla D
+            bot_d();
         }
         else if (key == '#')
         {
-            // Animação da tecla #
+            tecla_hashtag();
         }
         else if (key == '*')
         {
             ani_asterisco(); // Chama a funcionalidade da tecla '*'
-        }
-        else
-            printf("Essa tecla não possui animação");
         }
     }
 }

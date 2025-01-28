@@ -1,7 +1,7 @@
-#ifndef ANI_05_H
-#define ANI_05_H
+#ifndef BOT_D_H
+#define BOT_D_H
 
 //Declaração das funções da animação
-void ani_05();
+void bot_d();
 
 #endif
