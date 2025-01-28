@@ -4,6 +4,7 @@
 #include "pico/cyw43_arch.h"
 #include "ani_00.h"
 #include "ani_02.h"
+#include "ani_03.h"
 #include "ani_04.h"
 #include "ani_05.h"
 #include "ani_asterisco.h"
@@ -45,7 +46,9 @@ int main()
         }
         else if (key == '3')
         {
-            // Animação da tecla 3
+          // Animação da tecla 3
+          ani_03();  
+          sleep_ms(500);  
         }
         else if (key == '4')
         {
