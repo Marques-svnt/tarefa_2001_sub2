@@ -81,15 +81,6 @@ void npWrite() {
     sleep_us(100); // RESET
 }
 
-/**
- * Liga todos os LEDs na cor vermelha com 80% de brilho.
- */
-//void allLEDsRed() {
-//    for (uint i = 0; i < LED_COUNT; ++i) {
-//        npSetLED(i, VERMELHO);
-//    }
-//    npWrite();
-//}
 
 void ani_tecla_c() {
     stdio_init_all();
@@ -99,37 +90,12 @@ void ani_tecla_c() {
     npClear();
 
     int i = 0;
-    //int j = 0;
+    int j = 0;
 
     while (i == 0) {
-        //for (j = 0; j < LED_COUNT; j++) {
-        //    npSetLED(j, VERMELHO);
-        //}
-        npSetLED(0, VERMELHO);
-        npSetLED(1, VERMELHO);
-        npSetLED(2, VERMELHO);
-        npSetLED(3, VERMELHO);
-        npSetLED(4, VERMELHO);
-        npSetLED(5, VERMELHO);
-        npSetLED(6, VERMELHO);
-        npSetLED(7, VERMELHO);
-        npSetLED(8, VERMELHO);
-        npSetLED(9, VERMELHO);
-        npSetLED(10, VERMELHO);
-        npSetLED(11, VERMELHO);
-        npSetLED(12, VERMELHO);
-        npSetLED(13, VERMELHO);
-        npSetLED(14, VERMELHO);
-        npSetLED(15, VERMELHO);
-        npSetLED(16, VERMELHO);
-        npSetLED(17, VERMELHO);
-        npSetLED(18, VERMELHO);
-        npSetLED(19, VERMELHO);
-        npSetLED(20, VERMELHO);
-        npSetLED(21, VERMELHO);
-        npSetLED(22, VERMELHO);
-        npSetLED(23, VERMELHO);
-        npSetLED(24, VERMELHO);
+        for (j = 0; j < LED_COUNT; j++) {
+            npSetLED(j, VERMELHO);
+        }
         npWrite();
         sleep_ms(10000);
         npClear();
