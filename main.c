@@ -83,7 +83,7 @@ int main()
         }
         else if (key == '#')
         {
-            // Animação da tecla #
+            tecla_hashtag();
         }
         else if (key == '*')
         {
