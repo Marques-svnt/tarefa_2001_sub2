@@ -7,6 +7,7 @@
 #include "ani_03.h"
 #include "ani_04.h"
 #include "ani_05.h"
+#include "ani_05.h"
 #include "ani_06.h"
 #include "ani_asterisco.h"
 #include "teclado.h"
@@ -64,7 +65,7 @@ int main()
         else if (key == '6')
         {
             // Animação da tecla 6
-            ani_06();  
+            ani_06();
             sleep_ms(500); 
         }
         else if (key == 'A')
