@@ -63,8 +63,6 @@ int main()
         else if (key == '6')
         {
             // Animação da tecla 6
-            ani_06();  
-            sleep_ms(500); 
         }
         else if (key == 'A')
         {
