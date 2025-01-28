@@ -9,15 +9,18 @@
 #include "buzzer.h"
 #include "leds.h"
 // Função principal
-int main() {
+int main()
+{
     stdio_init_all();
     teclado();
 
-    while (true) {
+    while (true)
+    {
         char key = pico_keypad_get_key();
 
         // Controle baseado em teclas específicas
-        if (key == '0') {
+        if (key == '0')
+        {
             ani_00();
         } else if (key == '1') {
             //Animação da tecla 1
@@ -51,5 +54,4 @@ int main() {
             printf("Essa tecla não possui animação");
         }
     }
-    return 0;
 }

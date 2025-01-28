@@ -7,7 +7,7 @@
 
 // Definição das cores:
 #define BRANCO 200, 200, 200
-#define AZUL 0, 0, 200
+#define AZUL  0, 0, 200
 #define AMARELO 200, 200, 0
 #define LARANJA 220, 80, 0
 
