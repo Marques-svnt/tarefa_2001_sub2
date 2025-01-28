@@ -14,7 +14,7 @@
 // Definição do delay
 #define delay 1000 / 4
 
-void ani_00()
+void ani_01()
 {
   buzzer_init();
 

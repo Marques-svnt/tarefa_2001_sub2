@@ -36,7 +36,7 @@ pico_sdk_init()
 # Add executable. Default name is the project name, version 0.1
 
 add_executable(main main.c 
-                src/ani_00.c 
+                src/ani_01.c 
                 src/teclado.c 
                 src/buzzer.c 
                 src/ani_asterisco.c 

@@ -2,7 +2,7 @@
 #include "pico/stdlib.h"
 #include "hardware/pwm.h"
 #include "pico/cyw43_arch.h"
-#include "ani_00.h"
+#include "ani_01.h"
 #include "ani_02.h"
 #include "ani_03.h"
 #include "ani_04.h"
@@ -35,14 +35,10 @@ int main()
         char key = pico_keypad_get_key();
 
         // Controle baseado em teclas específicas
-        if (key == '0')
+        if (key == '1')
         {
-            ani_00();
+            ani_01();
             sleep_ms(500);
-        }
-        else if (key == '1')
-        {
-            // Animação da tecla 1
         }
         else if (key == '2')
         {
