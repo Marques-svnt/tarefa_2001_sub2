@@ -3,10 +3,11 @@
 #include "hardware/pwm.h"
 #include "pico/cyw43_arch.h"
 #include "ani_00.h"
+#include "ani_02.h"
 #include "ani_asterisco.h"
 #include "teclado.h"
 #include "buzzer.h"
-
+#include "leds.h"
 // Função principal
 int main() {
     stdio_init_all();
@@ -20,8 +21,10 @@ int main() {
             ani_00();
         } else if (key == '1') {
             //Animação da tecla 1
-        } else if (key == '2') {
-            //Animação da tecla 2
+        } 
+        else if (key == '2') {
+           ani_02();
+            sleep_ms(500);
         } else if (key == '3') {
             //Animação da tecla 3
         } else if (key == '4') {
