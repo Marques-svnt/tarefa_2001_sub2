@@ -10,7 +10,7 @@
 // Definição do número de LEDs e pino.
 #define LED_COUNT 25
 
-void ani_tecla_B() {
+void ani_tecla_b() {
     int i = 0;
     for (i=0; i < LED_COUNT; i++){
         npSetLED(i, Azul);

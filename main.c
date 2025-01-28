@@ -77,7 +77,7 @@ int main()
         }
         else if (key == 'B')
         {
-             ani_tecla_b();
+            ani_tecla_b();
         }
         else if (key == 'C')
         {

@@ -46,7 +46,8 @@ add_executable(main main.c
                 src/ani_05.c 
                 src/ani_06.c
                 src/ani_07.c
-                src/ani_03.c 
+                src/ani_03.c
+                src/ani_tecla_b.c
                 src/ani_tecla_c.c 
                 src/bot_d.c
                 src/tecla_hashtag.c)
