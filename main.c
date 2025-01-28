@@ -5,7 +5,6 @@
 #include "ani_00.h"
 #include "ani_02.h"
 #include "ani_asterisco.h"
-#include "ani_teclaB.h"
 #include "teclado.h"
 #include "buzzer.h"
 #include "leds.h"
