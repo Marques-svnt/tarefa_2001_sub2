@@ -14,6 +14,7 @@
 #include "teclado.h"
 #include "buzzer.h"
 #include "ani_tecla_c.h"
+#include "ani_tecla_b.h"
 #include "bot_d.h"
 #include "leds.h"
 
@@ -79,7 +80,7 @@ int main()
         }
         else if (key == 'B')
         {
-            // Animação da tecla B
+             ani_tecla_b();
         }
         else if (key == 'C')
         {
