@@ -12,9 +12,9 @@
 
 // Endereço dos LEDs que serão acesos na animação de cada  letra
 const uint8_t leds_L[] = {0, 1, 2, 3, 4, 5, 14, 15, 24};
-const uint8_t leds_U[] = {0, 1, 2, 3, 4, 5, 9, 10, 14, 15, 19, 20, 24};
-const uint8_t leds_C[] = {0, 1, 2, 3 4, 5, 14, 15, 20, 21, 22, 23, 24};
-const uint8_t leds_A[] = {0, 4, 5, 9, 10, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24};
+const uint8_t leds_U2[] = {0, 1, 2, 3, 4, 5, 9, 10, 14, 15, 19, 20, 24};
+const uint8_t leds_C[] = {0, 1, 2, 3, 4, 5, 14, 15, 20, 21, 22, 23, 24};
+const uint8_t leds_A2[] = {0, 4, 5, 9, 10, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24};
 const uint8_t leds_S[] = {0, 1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24};
 
 const uint8_t leds_CORACAO[] = {2, 6, 8, 10, 14, 15, 17, 19, 21, 23};
