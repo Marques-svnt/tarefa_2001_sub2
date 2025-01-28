@@ -63,10 +63,6 @@ int main()
         {
             // Animação da tecla 6
         }
-        else if (key == '7')
-        {
-            // Animação da tecla 7
-        }
         else if (key == 'A')
         {
             bot_A();
