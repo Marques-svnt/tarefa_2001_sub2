@@ -1,5 +1,7 @@
+#include <stdio.h>
 #include "pico/stdlib.h"
-#include "hardware/pwm.h"
+#include "hardware/pio.h"
+#include "hardware/clocks.h"
 #include "leds.h"
 
 // Definindo a quantidade de LEDs na matriz 5x5

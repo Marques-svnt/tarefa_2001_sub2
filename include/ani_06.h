@@ -4,5 +4,4 @@
 //Declaração das funções da animação
 void ani_06();
 
-
 #endif

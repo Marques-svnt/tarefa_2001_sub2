@@ -45,6 +45,7 @@
         "leds.h": "c",
         "stdint.h": "c",
         "stdlib.h": "c",
-        "pio.h": "c"
+        "pio.h": "c",
+        "ani_asterisco.h": "c"
     }
 }
