@@ -10,6 +10,7 @@
 #include "buzzer.h"
 #include "leds.h"
 #include "ani_05.h"
+#include "tecla_hashtag.h"
 
 #define LED_PIN 7
 
@@ -54,7 +55,7 @@ int main()
         else if (key == '5')
         {
             ani_05();
-            sleep_ms(300);
+            sleep_ms(500);
         }
         else if (key == '6')
         {
@@ -82,7 +83,7 @@ int main()
         }
         else if (key == '#')
         {
-            // Animação da tecla #
+            // monitorar_tecla();
         }
         else if (key == '*')
         {
