@@ -9,7 +9,8 @@
 #define AZUL 0, 0, 200
 
 // Definição do delay
-#define delay 1000 / 4
+
+#define delay 2500 / 4
 
 /// animação 4 caso seja apertado a tecla 4
 void ani_04()

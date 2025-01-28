@@ -4,12 +4,14 @@
 #include "pico/cyw43_arch.h"
 #include "ani_00.h"
 #include "ani_02.h"
+#include "ani_03.h"
 #include "ani_04.h"
 #include "ani_05.h"
 #include "ani_asterisco.h"
 #include "tecla_hashtag.h"
 #include "teclado.h"
 #include "buzzer.h"
+#include "ani_tecla_c.h"
 #include "leds.h"
 
 #define LED_PIN 7
@@ -45,7 +47,9 @@ int main()
         }
         else if (key == '3')
         {
-            // Animação da tecla 3
+          // Animação da tecla 3
+          ani_03();  
+          sleep_ms(500);  
         }
         else if (key == '4')
         {
@@ -90,7 +94,6 @@ int main()
             ani_asterisco(); // Chama a funcionalidade da tecla '*'
         }
         else
-        {
             printf("Essa tecla não possui animação");
         }
     }
