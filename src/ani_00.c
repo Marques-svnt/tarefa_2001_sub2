@@ -12,10 +12,10 @@
 #define LED_PIN 7
 
 // Definição das cores:
-#define BRANCO 200, 200, 200
-#define AZUL  0, 0, 200
-#define AMARELO 200, 200, 0
-#define LARANJA 220, 80, 0
+#define BRANCO 255, 255, 255
+#define AZUL 0, 0, 255
+#define AMARELO 255, 255, 0
+#define LARANJA 255, 150, 0
 
 // Definição do delay
 #define delay 1000/4 
