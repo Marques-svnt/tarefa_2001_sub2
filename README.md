@@ -1,70 +1,93 @@
-Projeto Animações com Teclado e LEDs
 
-Descrição : Este projeto utiliza o Raspberry Pi Pico para controlar uma matriz de LEDs com animações acionadas por um teclado matricial. A cada tecla pressionada, uma animação é exibida na matriz de LEDs, oferecendo uma experiência interativa.
+# Projeto: Animações em matriz de LED usando teclado matricial no Wokwi
 
-Tabela de Conteúdos
-Descrição
-Funcionalidades
-Animações
-Estrutura do Código
-Requisitos
-Como usar
-Como Contribuir
-Licença
-Funcionalidades
-Tecla	Animação
-0-9	Animações específicas para cada número
-ANÚNCIO	Animações personalizadas para as letras
-*	Animação especial do asterisco
-#	(Animação configurável para essa tecla)
-Animações
-As animações são rompidas nas funções ani_00(), ani_02(), ani_03(), ani_04()e ani_asterisco(). Cada uma delas gera um efeito diferente nos LEDs, criando uma experiência visual interessante. Aqui está uma descrição básica de cada animação:
+## Descrição
 
-Função	Descrição da Animação
-ani_00()	Animação 00 (descrever o efeito visual)
-ani_02()	Animação 02 (descrever o efeito visual)
-ani_03()	Animação 03 (descrever o efeito visual)
-ani_04()	Animação 04 (descrever o efeito visual)
-ani_asterisco()	Animação especial para o asterisco (*)
-Estrutura do Código
-O projeto é organizado de forma modular, com cada funcionalidade separada em diferentes arquivos. Aqui está a estrutura do código:
+Este projeto utiliza um teclado matricial 4x4 conectado a um Raspberry Pi Pico para controlar uma matriz 5x5 de LEDs e exibir uma animação colorida em RGB
 
-Arquivo	Descrição
-principal.c	Código principal, controla a leitura das teclas e animações
-ani_00.c	Implementação da animação para a tecla 0
-ani_02.c	Implementação da animação para a tecla 2
-ani_03.c	Implementação da animação para a tecla 3
-ani_04.c	Implementação da animação para a tecla 4
-ani_asterisco.c	Implementação da animação para a tecla *
-teclado.c	Leitura e controle do teclado matricial
-leds.c	Controle da matriz de LEDs WS2812
-campainha.c	Controle do buzzer (se instalado)
-Requisitos
-Hardware
-Raspberry Pi Pico
-Teclado matricial para capturar as teclas pressionadas
-Matriz de LEDs WS2812 (ou similar) para mostrar as animações
-Buzzer (opcional) para efeitos sonoros
-Programas
-Ambiente de Desenvolvimento : Visual Studio Code com suporte para Raspberry Pi Pico
-Biblioteca : pico-sdk
-Como usar
-Passo 1: Preparação do Ambiente
-Instale o ambiente de desenvolvimento no seu computador. Você pode usar o Visual Studio Code com a extensão do Raspberry Pi Pico.
-Baixar as bibliotecas possíveis :
-Pico SDK
-Bibliotecas para controle de LED WS2812 e teclado matricial
-Passo 2: Conectar o Hardware
-Conecte o Raspberry Pi Pico ao computador via USB.
-Conecte o teclado matricial e a matriz de LEDs WS2812 ao Raspberry Pi Pico.
-Passo 3: Compilar e Carregar o Código
-Compile o código usando o ambiente de desenvolvimento.
-Carregue o código compilado para o Raspberry Pi Pico.
-Execute o código . As animações começarão a ser acionadas conforme as teclas pressionadas.
-Como Contribuir
-Faça um fork do repositório.
-Crie uma nova branch para sua feature ( git checkout -b feature/nova-animação).
-Implemente uma funcionalidade ou correção.
-Comprometa suas mudanças ( git commit -m 'Adiciona animação X').
-Envie sua filial para o repositório remoto ( git push origin feature/nova-animação).
-Abra um Pull Request para revisão e integração.
+---
+
+## Funcionalidades
+
+Animações das teclas 1 até 7
+Funções de acender e apagar Leds com intensidades programadas
+Buzzer como recurso sonoro em duas animações
+Modo bootsel através do teclado
+
+---
+
+## Requisitos
+
+- Raspberry Pi Pico
+- Teclado matricial 4x4 (WokWi)
+- Matriz 5x5 de LEDs
+- Buzzer
+
+---
+
+## Configuração
+
+### Mapeamento de teclas
+
+| Tecla | Função                              |
+|-------|-------------------------------------|
+| **1** | animação 01 - Gabriel Marques  - Bomba explodindo com buzzer               |
+| **2** | animação 02 Ariel dos Santos de Cristo Góes (animação em ondas e intensidade)                 |
+| **3** | animação 03 - Marcelo Rick Almeida Santos|
+| **4** | animação 04- Paulo César de Jesus Di Lauro Robô atirando  |
+| **5** | animação 05 - Bruna Alves Cabral  - Frames das letras do nome BRUNA |
+| **6*** | animação 06 - Lucas Borges Ribeiro - Animação do nome Lucas e um emoji   |
+| **7*** | animação 07 - Iago Virgílio - Vórtice Luminoso  |
+| **A*** | Desligar todos os LEDs  |
+| **B*** | Ligar todos os LEDs na cor azul com intensidade de 100 %  |
+| **C*** | Ligar todos os LEDs na cor vermelha com intensidade de 80 %  |
+| **D*** | Ligar todos os LEDs na cor verde com intensidade de 50 %  |
+| **#*** |Ligar todos os LEDs na cor branca com intensidade de 20 %  |
+| **\*** | Habilita o modo de gravação USB.  |
+
+---
+
+## Compilação e Execução
+
+1. Certifique-se de que o SDK do Raspberry Pi Pico está configurado no seu ambiente.
+2. Compile o programa utilizando a extensão **Raspberry Pi Pico Project** no VS Code:
+   - Abra o projeto no VS Code.
+   - Vá até a extensão do **Raspberry pi pico project** e clique em **Compile Project**.
+3. Coloque a placa em modo boot cell e copie o arquivo `main.uf2`, que está na pasta build, para o microcontrolador conectado via USB.
+
+---
+
+## Emulação com Wokwi
+
+Para testar o programa sem hardware físico, você pode utilizar o **Wokwi** para emulação no VS Code:
+
+1. Instale a extensão **Wokwi for VS Code**.
+2. Inicie a emulação:
+   - Clique no arquivo `diagram.json` e inicie a emulação.
+4. Teste o funcionamento do programa diretamente no ambiente emulado.
+
+---
+
+## Demonstração no YouTube
+
+Confira a demonstração completa deste projeto no YouTube: [Demonstração do Projeto]( a preencher )
+
+---
+
+## Colaboradores
+
+- [brunaalvescabral - Bruna Alves Cabral ](https://github.com/brunaalvescabral)
+- [iagovirgilio - Iago Virgílio Lopes Macedo de Oliveira](https://github.com/iagovirgilio)
+- [ribeiro51 - Lucas Borges Ribeiro](https://github.com/ribeiro51)
+- [PauloCesar53 - Paulo César de Jesus Di Lauro ](https://github.com/PauloCesar53)
+- [marques-svnt - Gabriel Marques de Andrade ](https://github.com/Marques-svnt)
+- [ArieldosSantosdeCristo - Ariel dos Santos de Cristo Góes ](https://github.com/ArieldosSantosdeCristo)
+- [Ma756-max - Marcelo Rick Almeida Santos](https://github.com/Ma756-max)
+
+---
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+
