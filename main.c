@@ -5,6 +5,7 @@
 #include "ani_00.h"
 #include "ani_02.h"
 #include "ani_asterisco.h"
+#include "ani_teclaB.h"
 #include "teclado.h"
 #include "buzzer.h"
 #include "leds.h"
@@ -41,7 +42,7 @@ int main()
         } else if (key == 'A') {
             //Animação da tecla A
         } else if (key == 'B') {
-            //Animação da tecla B
+            ani_teclaB(); 
         } else if (key == 'C') {
             //Animação da tecla C
         } else if (key == 'D') {

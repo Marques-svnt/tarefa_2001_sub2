@@ -39,6 +39,7 @@
     "files.associations": {
         "stdio.h": "c",
         "ws2818b.pio.h": "c",
-        "teclado.h": "c"
+        "teclado.h": "c",
+        "buzzer.h": "c"
     }
 }
