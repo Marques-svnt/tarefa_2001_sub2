@@ -37,6 +37,13 @@
     "raspberry-pi-pico.cmakePath": "${HOME}/.pico-sdk/cmake/v3.29.9/bin/cmake",
     "raspberry-pi-pico.ninjaPath": "${HOME}/.pico-sdk/ninja/v1.12.1/ninja",
     "files.associations": {
-        "stdio.h": "c"
+        "ws2818b.pio.h": "c",
+        "clocks.h": "c",
+        "tecla_hashtag.h": "c",
+        "ani_05.h": "c",
+        "ani_00.h": "c",
+        "leds.h": "c",
+        "stdint.h": "c",
+        "stdlib.h": "c"
     }
 }
