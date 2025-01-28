@@ -48,7 +48,8 @@ add_executable(main main.c
                 src/ani_07.c
                 src/ani_03.c 
                 src/ani_tecla_c.c 
-                src/bot_d.c)
+                src/bot_d.c
+                src/tecla_hashtag.c)
 
 pico_set_program_name(main "main")
 pico_set_program_version(main "0.1")

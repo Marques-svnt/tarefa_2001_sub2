@@ -15,6 +15,7 @@
 #include "buzzer.h"
 #include "ani_tecla_c.h"
 #include "bot_d.h"
+#include "tecla_hashtag.h"
 #include "leds.h"
 
 #define LED_PIN 7
@@ -91,7 +92,7 @@ int main()
         }
         else if (key == '#')
         {
-            // Animação da tecla #
+            tecla_hashtag();
         }
         else if (key == '*')
         {
