@@ -93,7 +93,7 @@ int main()
         {
             ani_asterisco(); // Chama a funcionalidade da tecla '*'
         }
-        else
+        else{
             printf("Essa tecla não possui animação");
         }
     }
