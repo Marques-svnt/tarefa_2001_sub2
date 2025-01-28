@@ -11,6 +11,7 @@
 #include "tecla_hashtag.h"
 #include "teclado.h"
 #include "buzzer.h"
+#include "ani_tecla_c.h"
 #include "leds.h"
 
 #define LED_PIN 7
@@ -93,7 +94,6 @@ int main()
             ani_asterisco(); // Chama a funcionalidade da tecla '*'
         }
         else
-        {
             printf("Essa tecla não possui animação");
         }
     }
