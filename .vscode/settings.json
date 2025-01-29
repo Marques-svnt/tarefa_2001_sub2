@@ -46,6 +46,7 @@
         "stdint.h": "c",
         "stdlib.h": "c",
         "pio.h": "c",
-        "ani_asterisco.h": "c"
+        "ani_asterisco.h": "c",
+        "stdio.h": "c"
     }
 }

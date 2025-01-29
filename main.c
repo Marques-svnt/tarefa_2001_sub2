@@ -10,6 +10,8 @@
 #include "ani_05.h"
 #include "ani_06.h"
 #include "ani_07.h"
+#include "ani_08.h"
+#include "ani_09.h"
 #include "ani_asterisco.h"
 #include "teclado.h"
 #include "buzzer.h"
@@ -70,6 +72,14 @@ int main()
         else if (key == '7') {
             ani_07();  
             sleep_ms(500);
+        }
+        else if (key == '8')
+        {
+            desenha_casa();
+        }
+        else if (key == '9')
+        {
+            desenha_barco();
         }
         else if (key == 'A')
         {
