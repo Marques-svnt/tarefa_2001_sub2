@@ -38,6 +38,8 @@ Modo bootsel através do teclado
 | **5** | animação 05 - Bruna Alves Cabral  - Frames das letras do nome BRUNA |
 | **6** | animação 06 - Lucas Borges Ribeiro - Animação do nome Lucas e um emoji   |
 | **7** | animação 07 - Iago Virgílio - Vórtice Luminoso  |
+| **8** | animação 08 -  Bruna Alves Cabral  - Desenho de uma casa  |
+| **9** | animação 09 -  Bruna Alves Cabral  - Animação de um barquinho velejante  |
 | **A** | Desligar todos os LEDs  |
 | **B** | Ligar todos os LEDs na cor azul com intensidade de 100 %  |
 | **C** | Ligar todos os LEDs na cor vermelha com intensidade de 80 %  |
